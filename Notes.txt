@@ -1,0 +1,3 @@
+** This file contains important information and lesson learned from 'TestCaseManagement' project.
+** Project started in 01/07/2021 and developed until 19/08/2021, this was my internship and i worked in 'Faraday Networks( a network company which aims to improve their network management services, company mainly uses; python, django, java )'. Project aims to develop a web app for easily manage test cases of test team with a database and UI.
+

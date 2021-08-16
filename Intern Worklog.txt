@@ -1,0 +1,309 @@
+01/07/2021 -- Day 1 -- Tuesday
+    - Attended to daily company and team meetings. (8.15 - 10.5)
+    - Installed Clickup and Slack for company communication and daily task assigments.(10.5-12)
+    - Installed several different programs to linux(kubuntu 21.04) for setting up the work enviroment.               (12 - 2)
+    - Started to learn Django(from Django docs) for the project. (2 - 4.30)
+    - Attended to end day meeting with software team (4.30 - 5)
+
+02/07/2021 -- Day 2 -- Friday
+    - Attended to daily company and team meetings. (8.15 - 9.5)
+    - Continue to learn Django(9.5-12)
+    - Learn about openvpn and company's server communication.(1-1.30)
+    - Continue to learn Django(1.5-4.5)
+    - Attended to end day meeting with software team (4.30 - 5)
+
+03/07/2021 -- Weekend   -- Saturday
+    - Continue and finished Django tutorials. (10 - 1 pm)
+
+04/07/2021 -- Weekend   -- Sunday
+    - Learned SASS, Git, JQuery and get a general knowledge on Selenium. (7.5 - 11.5)
+
+05/07/2021 --  Day 3  -- Monday
+    - Attended to company meeting.
+    - Attended to software team meeting.
+    - Started to planning development process of app.
+
+06/07/2021  --  Day 4 -- Tuesday
+    - Setup project enviroment
+        - Setup postgres and connect to App.
+        - connect gitlab to app.
+        - Set basic requirements for Django.
+        - Test everything.
+    - Start to Plan the App
+        - Start writing Docs.
+        - Using postgres with python
+        - Get table data to screen python/postgres
+        - Admin screen for logins.
+
+07/07/2021  -- Day 5 -- Wednesday
+    - Start Development of App.
+        - Build a structure for static files of project.
+        - Created Issue, Case models for database.
+        - Rebuild the project after a fatal error
+        - Created config.py for increase accessibility.
+
+08/07/2021 --  Day 6  -- Thursday
+    - Continued to App development.
+        - Studied Django
+        - Working on setting App structure.
+        - Fixing a bug on database caused by default value of primary key.
+        - Created basic admin windows.
+
+09/07/2021 -- Day 7 -- Friday
+    - Continued to App development.
+        - Fixed a button bug.
+        - Studied Git and Gitlab.
+        - Working on displaying lists and Querysets on Django templates.
+
+10/07/2021 -- Weekend   -- Saturday
+
+11/07/2021 -- Weekend   -- Sunday
+
+12/07/2021 --  Day 8  -- Monday
+    - Continued to App development.
+        - Linked Jquery and SASS to project and tested it.
+        - Worked on JQuery buttons using buttons.
+        - Researched Django Forms.
+        - Added new model,view,admin,urls for Release data.
+        - Planning for implementing new changes to app.
+
+13/07/2021 --  Day 9  -- Tuesday
+     - Continued to App development.
+        - Studied using template buttons with Jquery
+        - Implement Django Template button controls to app.
+        - Worked on returning object ids form templates to views.
+        - Fixed several bugs on buttons.
+
+14/07/2021 --  Day 10  -- Wendesday
+         - Continued to App development.
+            - Fixed several bugs on buttons.
+            - Reformat the app for better Html classes and cleaner code.
+            - Had problems with git branches lost some resent code and rewrite it several times.
+            - Added 'delete' button.
+            - Added 'edit' button.
+            - Tested current buttons.
+
+15/07/2021 -- Holiday -- Thursday
+
+16/07/2021 --  Day 11  -- Friday
+         - Continued to App development.
+            - Researched insert objects to database with django and how to get data  from html input                                    values.
+            - Worked on diffrence between 'add' and 'save' buttons
+            - Added 'add' button.
+            - Reformat app for more readable and cleaner format.
+            - Fixed bugs of 'delete' button.
+
+17/07/2021 -- Weekend -- Saturday
+
+18/07/2021 -- Weekend -- Sunday
+
+19/07/2021 - 25/07/2021 -- Holiday --
+        - Continued to App development.
+            - Rebuild the project.
+            - Set sass and jquery, created models views urls.
+            - Created templates buttons value fields.
+
+26/07/2021 -- Day 12 -- Monday
+            -Studying Django Docs on "Models,Views,Templates
+            -Working on save data with forms
+            -Fixed edit button.
+            -Added forms to templates
+            -Working on forms
+
+27/07/2021 -- Day 13 -- Tuesday
+            -Added choice field for selecting releases.
+            -Working on choiceField and datepicker.
+            -Get data from forms, Save data to database.
+
+28/07/2021 -- Day 14 -- Wendesday
+            -Fixed the on release choiceField, case 'add' and 'edit' works, delete button edited for
+            appearing based on situation, new 'save and add another' button added, forms.py view.py updated.
+            -Working on 'case'.
+            -Edit docs of project
+            -add' and 'edit issue is working  but choiceField still has a initilize problem
+            -Fixed a bug on adding or saving issues
+
+29/07/2021 -- Day 15 -- Thursday
+            -Working on bootstrap
+            -Working on Jquery for set difference between 'save' and 'save and add another' buttons.
+            -"Starting test & improve phase"
+            -Writing Docs.
+
+30/07/2021 -- Day 16 -- Friday
+            Fixed:
+            - 'issue' delete works but gives page not found
+            error after delete.(both in list and edit)
+
+            - 'case' delete works but gives page not found
+            error after delete.(both in list and edit)
+
+            - save and add another button doesnt save.
+
+            - case issue choiceField always saves to a certain issue.
+
+            - choiceField are outdated has old options
+            and doesnt have new ones.
+
+            Added:
+            - Set template names based on content.
+
+            Studied:
+            - started learning bootstrap from udemy and docs
+
+02/08/2021 -- Day 17 -- Monday
+    - starting to learn and implement bootstrap on test branch.
+
+    - working on bootstrap and adding it to templates.
+
+    - working on to fix several bugs both on django and bootstrap side.
+
+03/08/2021 -- Day 18 -- Tuesday
+    - Added bootstrap to navbar, footer, layout & generalbuttons, forms.
+    - Fixed several bugs on project caused by bootstrap entagration.
+      Design Bugs:
+    - footer needs to stick to bottom of the page.
+    - 'list releases'' s size is wrong.
+    - navbar links (issue,case) doesnt work cuz they cant get the id.
+    - remove 'save and add another' button.
+    - reformat app.
+    - view's for loops are wrong needs to replaced with 'filter'.
+    - view's need to seperated.
+
+04/08/2021 -- Day 19 -- Wendesday
+  - Worked on bugs on app.
+  - Keep adding bootstrap to app.
+  - had a meeting about last version of app.
+  - Planned Redesign off new 'case_manage' whicth combines 'case-list' and 'case-new'
+  - Researched Bootstrap grids,table
+  - Added crispy forms to 'release' and 'issue'
+  - Worked on Redesign
+    - write a url path
+    - write a view combines both case_new and case_list
+    - write case-manage template has bugs on getting objects from lists.
+    - planned new needed changes after redesign.
+
+05/08/2021 -- Day 20 -- Thursday
+   - General Improvements:
+    - Seperate all logic to services.
+        - release
+        - issue
+    -created a new url path for view.
+    - release edit wont work
+    - Worked on case redesign.
+
+06/08/2021 -- Day 21 -- Friday
+    - Seperate logic for 'case' to view and service.
+    - Formatted 'release' 'issue' 'case'; view and services
+        - fill form need formatting.
+        - reformat names of func. , views.
+    - Fixed few bugs on app. 'edit' , 'release' etc.
+        - datepicker
+        - save form add a new object doesnt edit existing one.
+    - Worked on case redesign.
+        - add a new view trying to achive combine list and update view to manage.
+        - worked on templates add new case in case_manage and manage
+            print some forms, but with wrong infos.
+    - Filled out new internship papers.
+
+09/08/2021 -- Day 22 -- Monday
+    - Create new case:
+        - Create button directs to case/new.
+        - Save button saves new case.
+        - Needs grid formatting
+
+    - Case manage:
+        - Need to list case forms.
+        - Need to add infos to form values.
+        - Needs grid formatting
+
+    - release_delete got multiple values for id
+        (url got service func name instead of view)
+    - buttons won work fully clickable(remove button tags from templates)
+    - if case empty it doesnt opens a new case
+    - case create button at case manage doesnt work(URL was wrong)
+    - Issue service,view got a naming error.
+    - Service imports and function names need reformatting.
+
+10/08/2021 -- Day 23 -- Tuesday
+    Intern:
+        - Fixed a format error in docs.
+        - Rewrite some docs.
+        - Filled out missing days.
+
+    Case Manage:
+        - delete button should work for each case
+                    (Add case.id to form to get id for delete.)
+        - Status need to be a dropdown with 5 choices
+            - Todo - OK -NotOk - Review - In Progress
+        - Save need a redesign
+                - Whenever we change something it needs to save.
+                    - Focus or upkey event of JQuery might work.
+                    - keyup work every time event is triggered
+                    - Focusout worked
+                    - save-form->needs to save that case everytime
+                    - empty-form->needs to save a new form and add
+                    a new form.
+    Bugs:
+        - release_delete() got multiple values for argument 'pk'
+        - issue_delete() got multiple values for argument 'pk'
+        - case_delete() got multiple values for argument 'pk'
+            (View delete's doesn't had a request parameter but needed it.)
+        - Reverse for 'case_delete' with arguments '('',)' not found.
+            (it doesnt work now because it missing case.id)
+
+11/08/2021 -- Day 24 -- Wendesday
+    - Worked on saving cases.(it needs new functions a better logic)
+
+    - start test number by 1 and auto increment.
+
+    - Every time there should be a extra case for
+        adding new case and if it filled then a new one should add.
+
+
+    Bugs:
+        - save case has several problems.
+            - save case overrides other cases.
+            - save form all gets one form and saves it to all cases.
+
+        - case delete redirect to case list not case manage.
+        - case new saves new case but doesnt redirect to case_manage
+            (redirect view and send issue.id to view.
+        - test_number needs to auto increment
+            (we can remove it from model and work only on template.)
+
+12/08/2021 -- Day 25 -- Thursday
+    - Edit and filled Intern worklogs.
+    - there was a migration problem caused by a deleted field from case,
+    object cant read from database:
+        - first i drop the database then makemigrations again but
+        django can't read the records.
+        - then create a new app in project and try to init
+        database from there but same got the error
+        - create a new project and try to init from there but failed.
+        - then drop the database and makemigrations again it worked button
+        no table formed in database
+        - drop the database again and maekmigrations and it worked.
+        - recover old project again and use it new database.
+        - fix some connection bugs there and save it.
+        - fix git conflicts.
+
+        - remove case manage button from issue_list and make issue click
+        redirect to case manage url.
+
+        - find all bugs with case manage save and start working on it.
+
+13/08/2021 -- Day 26 -- Friday
+
+
+16/08/2021 -- Day 27 -- Monday
+
+
+17/08/2021 -- Day 28 -- Tuesday
+
+
+18/08/2021 -- Day 29 -- Wendesday
+
+
+19/08/2021 -- Day 30 -- Thursday
+
+
