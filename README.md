@@ -1,2 +1,2 @@
 # test-case-management
-intern project
+Test case manager that i develop during my first internship.App developed using Postgres, Django, JQuery and Sass.
