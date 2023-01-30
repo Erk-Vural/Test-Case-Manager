@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Issue List | Test Case Manager</title>
+{% endblock %}
+{% block content %}
+    <div class="issue-list-content">
+        <div>
+            <h2 class="text-center fw-bold">List Issues</h2>
+
+            <a href="/issue/new" class="btn btn-dark m-2 p-lg-0 text-light">Create</a>
+
+            <div class="table-responsive">
+                <table class="mx-auto w-auto">
+                    <caption>Issues - Release Version: {{ issues.0.release }}</caption>
+                    <tbody>
+                    {% for issue in issues %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'case_manage' issue.id %}" class="text-dark ms-1">
+                                    <em>Project Name: {{ issue.project_name }}
+                                        Issue: {{ issue.issue }}
+                                        Release Version: {{ issue.release }}</em></a>
+                            </th>
+                            <td>
+                                <a href="{% url 'issue_update' issue.id %}" class="btn btn-dark ms-1 p-1 text-light">Edit</a>
+                            </td>
+                            <td>
+                                <a href="{% url 'issue_delete' issue.id %}" class="btn btn-dark ms-1 p-1 text-light">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

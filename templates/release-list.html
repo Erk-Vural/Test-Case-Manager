@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Release List | Test Case Manager</title>
+{% endblock %}
+{% block content %}
+    <div class="release-list-content">
+
+        <h2 class="text-center fw-bold">List Releases</h2>
+
+        <a href="/release/new" class="btn btn-dark m-3 p-lg-0 text-light">Create</a>
+
+        <div class="table-responsive">
+            <table class="mx-auto w-auto">
+                <caption>Releases</caption>
+                <tbody>
+                {% for release in releases %}
+                    <tr>
+                        <th>
+                            <em><a href="{% url 'issue_list' release.id %} " class="text-dark ms-1">Release
+                                Version: {{ release.version }}  </a></em>
+                        </th>
+                        <td>
+                            <a href="{% url 'release_update' release.id %}" class="btn btn-dark ms-1 p-1 text-light">Edit</a>
+                        </td>
+                        <td>
+                            <a href="{% url 'release_delete' release.id %}" class="btn btn-dark ms-1 p-1 text-light">Delete</a>
+                        </td>
+                    </tr>
+                    <div class="row">
+                    </div>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

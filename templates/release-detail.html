@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load crispy_forms_filters %}
+
+{% block head %}
+    <title>Release Detail | Test Case Manager</title>
+{% endblock %}
+{% block content %}
+    <h2 class="text-center fw-bold">Manage Release</h2>
+
+    <div class="release-detail-content">
+        {% if release.id != NULL %}
+            <form action="../{{ release.id }}/" method="post" class="text-center mb-5 form-control">
+                {% csrf_token %}
+                <br>
+                {{ form |crispy}}
+                <br>
+                <input type="submit" value="Save" class="btn bg-dark text-light  p-1 me-4">
+                <a href="{% url 'release_delete' release.id %}" class="btn bg-dark p-1 text-light">Delete</a>
+            </form>
+        {% else %}
+            <form action="new" method="post" class="text-center mb-5 form-control ">
+                {% csrf_token %}
+                <br>
+                {{ form |crispy}}
+                <br>
+                <input type="submit" value="Save" class="btn bg-dark text-light  p-1 me-4">
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}

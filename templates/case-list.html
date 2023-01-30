@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Case List | Test Case Manager</title>
+{% endblock %}
+{% block content %}
+    <div class="case-list-content">
+       <h2 class="text-center fw-bold">List Cases</h2>
+        <br>
+        <a href="/case/new" class="btn btn-dark m-2 p-lg-0 text-light">Create</a>
+        <br>
+        <div class="table-responsive">
+            <table class="mx-auto w-auto">
+                <caption>Cases - Issue : {{ cases.0.issue }}</caption>
+                <tbody>
+                {% for case in cases %}
+                    <tr>
+                        <th class="text-dark ms-1">
+                            <em>Title: </em>{{ case.title }}
+                            <em>Test Number: </em>{{ case.test_number }}
+                            <em>Status: </em> {{ case.status }}
+                        </th>
+                        <td>
+                            <a href="{% url 'case_update' case.id %}" class="btn btn-dark ms-1 p-1 text-light">Edit</a>
+                        </td>
+                        <td>
+                            <a href="{% url 'case_delete' case.id %}" class="btn btn-dark ms-1 p-1 text-light">Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

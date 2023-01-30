@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load crispy_forms_filters %}
+{% block head %}
+    <title>Issue Detail | Test Case Manager</title>
+{% endblock %}
+{% block content %}
+    <h2 class="text-center fw-bold">Manage Issue</h2>
+    <br>
+
+    {% if issue.id != NULL %}
+        <h3 class="text"><em><strong>Project Name: </strong></em> {{ issue.project_name }}
+            <em><strong>Release Version: </strong></em> {{ issue.release }}</h3>
+    {% endif %}
+
+    <div class="issue-detail-content">
+        {% if issue.id != NULL %}
+            <form action="../{{ issue.id }}/" method="post" class="text-center mb-5 form-control">
+                {% csrf_token %}
+                <br>
+                {{ form |crispy }}
+                <br>
+
+                <input type="submit" value="Save" class="btn bg-dark text-light  p-1 me-4">
+                <a href="{% url 'issue_delete' issue.id %}" class="btn bg-dark p-1 text-light">Delete</a>
+            </form>
+        {% else %}
+            <form action="new" method="post" class="text-center mb-5 form-control">
+                {% csrf_token %}
+                <br>
+                {{ form |crispy }}
+                <br>
+                <input type="submit" value="Save" class="btn bg-dark text-light  p-1 me-4">
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}
